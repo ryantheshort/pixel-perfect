@@ -21,25 +21,15 @@ html {
 }
 body {
     min-height: 100vh;
-    background-color: #a4a4a4;
+    background-color: var(--main);
     margin: 0;
+    border: 0;
 }
 
-.navbar {
-    overflow: hidden;
-    margin-top: 0;
-    background-color: #ffffff;
-    
+header {
+    display: flex;
 }
 
-.navbar a{
-    
-    text-align: center;
-    padding: 10px 10px;
-    margin-left: 40px;
-
-
-}
 /*
 .nav-bar::after {
     content: "";
