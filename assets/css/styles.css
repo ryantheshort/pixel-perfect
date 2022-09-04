@@ -58,18 +58,33 @@ header {
     letter-spacing: 1px;
     width: 100;
     opacity: .85;
+    
 }
 
-/*
-.nav-bar::after {
-    content: "";
-    top: 5%;
-    border: solid 1px #808080;
-    position: absolute;
-    transform: translateY(95%);
-}*/
-
 .social-icons {
-    float: right;
-    right: 5%;
+    display: flex;
+    width: 200px;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 568px;
+    font-size: 13px;
+    color: var(--icons);
+    
+    
+}
+
+.fa-brands.fa-twitter {
+    margin-left: 18px;
+}
+.fa-brands.fa-instagram {
+    margin-left: 13px;
+}
+.fa-brands.fa-pinterest {
+    margin-left: 15px;
+}
+.fa-brands.fa-google-plus-g {
+    margin-left: 13px;
+}
+.fa-solid.fa-magnifying-glass {
+    margin-left: 20px;
 }
