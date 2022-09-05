@@ -17,6 +17,8 @@ html {
     --pagebtnsel: #ca5c3c;
     --pagebtnwht: #f3f2f2;
     --pagebtnborder: #eeeeee;
+    --white: #fff;
+    --articleheader: #d37755;
 
 }
 body {
@@ -69,8 +71,6 @@ header {
     margin-left: 568px;
     font-size: 13px;
     color: var(--icons);
-    
-    
 }
 
 .fa-brands.fa-twitter {
@@ -87,4 +87,101 @@ header {
 }
 .fa-solid.fa-magnifying-glass {
     margin-left: 20px;
+}
+.nav1 {
+    align-content: center;
+}
+
+main {
+    display: flex;
+}
+
+.article-blocks {
+    display: flex;
+    flex-direction: column;
+    width: 751px;
+    padding: 0;
+    margin-left: 150px;
+    margin-top: 49px;
+    margin-bottom: 0px;
+    border-radius: 1px;
+    list-style-type: none;
+}
+.article1 {
+    height: 923px;
+    margin-bottom: 49px;
+    background-color: var(--white);
+    border: 1px solid var(--border)
+}
+
+/* IMAGES*/
+img {
+    max-height: 181px;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+    transition: 0.1s ease-in-out;
+}
+.ryan-teal {
+    max-height: 472px;
+    width: 100%;
+    object-position: center top;
+}
+
+/* ARTICLES */
+
+.article-content {
+    height: 100%;
+}
+.article-content > p {
+    display: flex;
+    font-family: "Lato";
+    color: #7d7d7d;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 0;
+    margin-top: 23px;
+    margin-left: 39px;
+    margin-right: 39px;
+    height: 150px;
+}
+.article-button {
+    display: flex;
+    color: var(--articleheader);
+    border: 1px solid var(--articleheader);
+    padding: 11px 18px;
+    margin-left: 288px;
+    margin-top: 9px;
+    background-color: var(--white);
+    transition: all 250ms ease;
+    padding: 11px 18px;
+    font-family: "Lato";
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    
+}
+
+/*HEADINGS*/
+
+.heading-small {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: "Lato";
+    color: var(--articleheader);
+    font-size: 11.2px;
+    letter-spacing: 0.8px;
+    margin-top: 46px;
+}
+.heading-large {
+    display: flex;
+    color: var(--navfont);
+    justify-content: center;
+    width: 100%;
+    font-family: "Oswald";
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-top: 8px;
+    margin-bottom: 0;
 }
