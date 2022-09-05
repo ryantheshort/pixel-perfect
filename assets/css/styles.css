@@ -19,6 +19,7 @@ html {
     --pagebtnborder: #eeeeee;
     --white: #fff;
     --articleheader: #d37755;
+    --ltgryfont: #7e7d7d;
 
 }
 body {
@@ -96,6 +97,37 @@ main {
     display: flex;
 }
 
+
+/* IMAGES*/
+img {
+    max-height: 181px;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+    transition: 0.1s ease-in-out;
+}
+.ryan-teal {
+    max-height: 472px;
+    width: 100%;
+    object-position: center top;
+}
+.rocks {
+    max-height: 472px;
+    width: 100%;
+    object-position: center top;
+}
+.conrad {
+    max-height: 500px;
+    width: 100%;
+    object-position: center top;
+}
+.bobross {
+    max-height: 474px;
+    width: 100%;
+    object-position: top center;
+}
+/* ARTICLES */
+
 .article-blocks {
     display: flex;
     flex-direction: column;
@@ -113,23 +145,24 @@ main {
     background-color: var(--white);
     border: 1px solid var(--border)
 }
-
-/* IMAGES*/
-img {
-    max-height: 181px;
-    min-width: 100%;
-    object-fit: cover;
-    vertical-align: bottom;
-    transition: 0.1s ease-in-out;
+.article2 {
+    height: 925px;
+    margin-bottom: 48px;
+    background-color: var(--white);
+    border: 1px solid var(--border);
 }
-.ryan-teal {
-    max-height: 472px;
-    width: 100%;
-    object-position: center top;
+.article3 {
+    height: 951px;
+    margin-bottom: 48px;
+    background-color: var(--white);
+    border: 1px solid var(--border)
 }
-
-/* ARTICLES */
-
+.article4 {
+    height: 924px;
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    margin-bottom: 48px;
+}
 .article-content {
     height: 100%;
 }
@@ -173,6 +206,35 @@ img {
     margin-top: 40px;
     margin-left: 39px;
     margin-right: 39px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.name-date {
+    font-family: "Lato";
+    font-size: 14px;
+    color: #787878;
+    margin-top: 1px;
+}
+.social-icons-article {
+    display: flex;
+    align-items: center;
+    color: #c2c2c2;
+    padding-left: 0;
+    padding-top: 5px;
+    letter-spacing: 0.5px;
+}
+.social-icons-article > .fa-brands.fa-twitter {
+    margin-left: 15px;
+}
+.social-icons-article > .fa-brands.fa-instagram {
+    margin-left: 15px;
+}
+.social-icons-article > .fa-brands.fa-pinterest {
+    margin-left: 16px;
+}
+.social-icons-article > .fa-brands.fa-google-plus-g {
+    margin-left: 15px;
 }
 
 /*HEADINGS*/
