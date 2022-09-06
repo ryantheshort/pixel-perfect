@@ -516,6 +516,102 @@ main {
     height: 76px;
     margin-top: -4px;
 }
+.side3third > h3 {
+    display: flex;
+    width: 100%;
+    font-family: "Oswald";
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    margin-top: 2px;
+    margin-left: 118px;
+    color: var(--navfont);
+    margin-bottom: 0;
+    font-stretch: semi-condensed;
+    font-size-adjust: 0.5;
+    position: absolute;
+    font-weight: 500;
+}
+.side3third > h4 {
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 200;
+    color: #7e7d7d;
+    margin-top: 28px;
+    margin-left: 118px;
+    position: absolute;
+}
+.side3fourth {
+    width: 300px;
+    height: 92px;
+    margin-top: 14px;
+    margin-left: 30px;
+    position: relative;
+}
+.side3fourth > img {
+    position: absolute;
+    width: 103px;
+    height: 76px;
+}
+.side3fourth > h3 {
+    display: flex;
+    width: 100%;
+    font-family: "Oswald";
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    margin-top: 1px;
+    margin-left: 118px;
+    color: var(--navfont);
+    margin-bottom: 0;
+    font-stretch: semi-condensed;
+    font-size-adjust: 0.5;
+    position: absolute;
+}
+.side3fourth > h4 {
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 200;
+    color: #7e7d7d;
+    margin-top: 28px;
+    margin-left: 118px;
+    position: absolute;
+}
+.side4 {
+    min-height: 576px;
+    background-color: var(--white);
+    margin-bottom: 48px;
+    border: 1px solid var(--border);
+}
+.side4 > h2 > a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: "Oswald";
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: var(--navfont);
+    text-decoration: none;
+    transition: 0.3s;
+}
+.side4one {
+    width: 83.6%;
+    margin: 25px 8.6% 0 8.6%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.side4one > a {
+    max-width: 145px;
+    max-height: 145px;
+    margin-bottom: 11px;
+}
+.side4one > a > img {
+    width: 145px;
+    height: 145px;
+}
 .social-icons-sidelist {
     display: flex;
     justify-content: center;
