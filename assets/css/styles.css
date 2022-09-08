@@ -258,7 +258,7 @@ main {
     float: left;
     flex-direction: column;
     list-style-type: none;
-    width: 25.7%;
+    width: 25%;
     padding: 0;
     margin-left: 28px;
     margin-top: 49px;
@@ -282,7 +282,7 @@ main {
     font-weight: 500;
     font-size: 18px;
     letter-spacing: 0.5px;
-    margin-top: 5px;
+    margin-top: 3px;
     margin-bottom: 0;
     color: var(--navfont);
     
@@ -295,7 +295,7 @@ main {
     font-size: 15px;
     line-height: 25px;
     margin-bottom: 0;
-    margin-top: 23px;
+    margin-top: 20px;
     height: 120px;
     text-align: center;
     width: 100%;
@@ -630,10 +630,12 @@ main {
     height: 30px;
     font-size: 14px;
     margin: 0 5px 0 4px;
+    padding: 6;
     text-decoration: none;
     color: #a7a7a7;
     border: 1px solid #ececec;
     border-radius: 100%;
+    
     
 }
 /* SIDE BLOCKS IMAGES */
@@ -877,4 +879,17 @@ footer {
     padding-top: 26px;
     color: #797878;
     background-color: #222;
+}
+
+/* MEDIA QUERIES */
+@MEDIA (min-width: 1160px) {
+    .page1 {
+        display: none;
+    }
+}
+@media (min-width: 860px) and (max-width: 1160px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
 }
