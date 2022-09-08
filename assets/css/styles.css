@@ -28,7 +28,6 @@ body {
     margin: 0;
     border: 0;
     width: 100%;
-    
 }
 
 header {
@@ -51,7 +50,7 @@ header {
     padding-right: 3px;
     background-color: var(--header);
 }
-
+/* Change font-weight to 400, bold */
 .navbar > a {
     text-decoration: none;
     color: var(--navfont);
@@ -143,9 +142,10 @@ main {
 /* ARTICLES */
 
 .article-blocks {
+    display: flex;
     float: left;
     flex-direction: column;
-    width: 53.4%;
+    width: 52.2%;
     padding: 0;
     margin-left: 150px;
     margin-top: 49px;
@@ -155,13 +155,13 @@ main {
 }
 .article1 {
     height: 923px;
-    margin-bottom: 49px;
+    margin-bottom: 46px;
     background-color: var(--white);
-    border: 1px solid var(--border)
+    border: 1px solid var(--border);
 }
 .article2 {
     height: 925px;
-    margin-bottom: 48px;
+    margin-bottom: 47px;
     background-color: var(--white);
     border: 1px solid var(--border);
 }
@@ -169,16 +169,17 @@ main {
     height: 951px;
     margin-bottom: 48px;
     background-color: var(--white);
-    border: 1px solid var(--border)
+    border: 1px solid var(--border);
 }
 .article4 {
-    height: 924px;
+    height: 921px;
     background-color: var(--white);
     border: 1px solid var(--border);
     margin-bottom: 48px;
 }
 .article-content {
     height: 100%;
+
 }
 .article-content > p {
     display: flex;
@@ -187,10 +188,10 @@ main {
     font-size: 15px;
     line-height: 25px;
     margin-bottom: 0;
-    margin-top: 26px;
+    margin-top: 15px;
     margin-left: 39px;
     margin-right: 39px;
-    height: 150px;
+    height: 149px;
 }
 .article-button {
     display: flex;
@@ -222,6 +223,7 @@ main {
     margin-right: 39px;
     list-style-type: none;
     padding-left: 0;
+    
 }
 
 .name-date {
@@ -666,7 +668,7 @@ main {
     color: var(--articleheader);
     font-size: 11.2px;
     letter-spacing: 0.8px;
-    margin-top: 46px;
+    margin-top: 42px;
     margin-bottom: 13px;
 }
 .heading-large {
@@ -677,6 +679,202 @@ main {
     font-family: "Oswald";
     font-weight: 500;
     letter-spacing: 0.5px;
-    margin-top: 8px;
+    margin-top: 6px;
     margin-bottom: 0;
+}
+/* PAGE BUTTONS */
+
+.page-buttons {
+    display: flex;
+    margin-left: 149px;
+    margin-top: 0px;
+    height: 36px;
+}
+.page1:hover {
+    background-color: #9e462b;
+    color: var(--white);
+    cursor: pointer;
+}
+.page2:hover {
+    background-color: #ca5c3b;
+    color: var(--white);
+    cursor: pointer;
+}
+.page3:hover {
+    background-color: #ca5c3b;
+    color: var(--white);
+    cursor: pointer;
+}
+.page4:hover {
+    background-color: #ca5c3b;
+    color: var(--white);
+    cursor: pointer;
+}
+.pages:hover {
+    background-color: #ca5c3b;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.page1 {
+    background-color: var(--white);
+    height: 100%;
+    width: 34px;
+    border: 1px solid var(--pagebtnborder);
+    color: var(--navfont);
+    font-family: "Oswald";
+    font-size: 15px;
+    font-weight: 400;
+    transition: 0.3s;
+    
+}
+.page2 {
+    background-color: var(--white);
+    height: 100%;
+    width: 34px;
+    border: 1px solid var(--pagebtnborder);
+    color: var(--navfont);
+    font-family: "Oswald";
+    font-size: 15px;
+    font-weight: 400;
+    transition: 0.3s;
+    margin-left: 5px;
+}
+.page3 {
+    background-color: var(--white);
+    height: 100%;
+    width: 34px;
+    border: 1px solid var(--pagebtnborder);
+    color: var(--navfont);
+    font-family: "Oswald";
+    font-size: 15px;
+    font-weight: 400;
+    transition: 0.3s;
+    margin-left: 5px;
+}
+.page4 {
+    background-color: var(--white);
+    height: 100%;
+    width: 34px;
+    border: 1px solid var(--pagebtnborder);
+    color: var(--navfont);
+    font-family: "Oswald";
+    font-size: 15px;
+    font-weight: 400;
+    transition: 0.3s;
+    margin-left: 5px;
+    margin-bottom: 1px;
+}
+.pages {
+    background-color: var(--white);
+    height: 100%;
+    width: 40px;
+    border: 1px solid var(--pagebtnborder);
+    color: var(--navfont);
+    font-family: "Oswald";
+    font-size: 17px;
+    font-weight: 400;
+    transition: 0.3s;
+    margin-left: 5px;
+}
+
+/* FOOTER */
+
+footer {
+    position: relative;
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 86px;
+    height: 182px;
+    width: 100%;
+    background-color:  var(--white);
+    border-top: 1px solid var(--pagebtnborder);
+}
+.footer1 {
+    font-family: "Oswald";
+    font-size: 18.5px;
+    text-align: center;
+    align-content: center;
+    font-weight: 425;
+    letter-spacing: 0.2px;
+    width: 100%;
+    height: 45px;
+    padding-top: 26px;
+    color: var(--navfont);
+    
+     
+}
+.footer1 > a {
+    font-family: "Oswald";
+    font-size: 18.5px;
+    text-align: center;
+    align-content: center;
+    font-weight: 425;
+    letter-spacing: 0.2px;
+    width: 100%;
+    height: 90px;
+    padding-top: 26px;
+    color: var(--navfont);
+    transition: 0.3s;
+    text-decoration: none;
+}
+.footer1 > a:hover {
+    color: #be6748;
+    cursor: pointer;
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    height: 100%;
+    width: 100%;
+    flex-basis: content;
+}
+.image-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+.image-wrapper > img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+.image-wrapper > .fade-content {
+    position: absolute;
+    inset: 0;
+    font-size: 2rem;
+    padding: 1rem;
+    background: rgba(202, 92, 60, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-wrapper:hover > .blurpic {
+    filter: blur(1px);
+}
+.image-wrapper > .fade-content {
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.image-wrapper:hover > .fade-content {
+    opacity: 1;
+    cursor: pointer;
+    color: var(--white);
+    font-family: "Lato";
+    font-size: 14px;
+}
+.footer2 {
+    font-family: "Lato";
+    font-size: 13px;
+    text-align: center;
+    align-content: center;
+    font-weight: 425;
+    letter-spacing: 0.45px;
+    width: 100%;
+    height: 100px;
+    padding-top: 26px;
+    color: #797878;
+    background-color: #222;
 }
