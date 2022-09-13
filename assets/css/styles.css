@@ -25,29 +25,34 @@ html {
 body {
     min-height: 100vh;
     background-color: var(--main);
-    margin: 0;
-    border: 0;
-    width: 100%;
+    
 }
 
 header {
-    display: flex;
     border-bottom: 1px solid var(--border);
     background-color: var(--header);
-    width: 100vw;
+    width: 100%;
     top: 0;
-    left: 0;
     height: 61px;
 }
 
-.navbar {
+.top-bar {
+    width: 80%;
+    top: 0;
+    height: 61px;
+    position: relative;
+    margin: auto;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    width: 375px;
-    margin-left: 150px;
+    align-items: center;
+}
+
+.navbar {
+    display: inline-block;
+    position: relative;
+    justify-content: space-between;
+    margin-left: 0;
     padding-top: 1px;
-    padding-right: 3px;
     background-color: var(--header);
 }
 .mobile-menu {
@@ -62,20 +67,34 @@ header {
     font-weight: 400;
     font-style: bold;
     letter-spacing: 1px;
-    width: 100;
-    
-    
+    padding-right: 10px;
+     
 }
 
+.mobile-dropdown {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #444444;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 3.0s ease-in-out;
+}
 .social-icons {
     display: flex;
-    width: 200px;
-    align-items: center;
+    
+    
     text-decoration: none;
-    margin-left: 568px;
+    margin-right: 0;
     font-size: 13px;
     color: var(--icons);
     transition: 0.3s;
+    position: relative;
 }
 .social-icons:hover {
     color: #be6748;
@@ -364,7 +383,7 @@ main {
     
 }
 .side2second {
-    width: 80%;
+    width: 100%;
     margin-left: 30px;
     border-bottom: 1px solid var(--border);
 }
@@ -897,8 +916,11 @@ main {
         flex-direction: column;
 }
 .navbar {
-    display: none;
+    width: 100%;
+    margin: 0;
 }
+
+
 header {
     border-bottom: 1px solid var(--border);
     background-color: var(--header);
@@ -907,6 +929,10 @@ header {
     display: flex;
     justify-content: flex-end;
 }
+header > .social-icons {
+    display: none;
+}
+
 .side-blocks {
     display: flex;
     flex-direction: column;
@@ -934,3 +960,25 @@ header {
     list-style-type: none;
 }
 }
+
+/* ==MAX WIDTH 1044PX== */
+
+@media (max-width: 1044px) {
+
+    .main {
+        width: 95%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .side-blocks {
+    width: 100%;
+}
+
+    .article-blocks {
+        width: 100%;
+    }
+
+}
+
