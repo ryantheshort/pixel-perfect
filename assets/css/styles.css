@@ -96,9 +96,7 @@ header {
     transition: 0.3s;
     position: relative;
 }
-.social-icons:hover {
-    color: #be6748;
-}
+
 .social-icons > a:hover {
     background-position: 0;
 }
@@ -119,6 +117,24 @@ header {
 }
 .nav1 {
     align-content: center;
+}
+.social-icons > .fa-brands.fa-twitter:hover {
+    color: #be6748;
+}
+.social-icons > .fa.fa-facebook:hover {
+    color: #be6748;
+}
+.social-icons > .fa-brands.fa-instagram:hover {
+    color: #be6748;
+}
+.social-icons > .fa-brands.fa-pinterest:hover {
+    color: #be6748;
+}
+.social-icons > .fa-solid.fa-magnifying-glass:hover {
+    color: #be6748;
+}
+.social-icons > .fa-brands.fa-google-plus-g:hover {
+    color: #be6748;
 }
 
 
@@ -632,13 +648,19 @@ main {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    flex-direction: column;
+}
+.side4oneRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 .side4one > a {
     max-width: 145px;
     max-height: 145px;
-    margin-bottom: 11px;
+    
 }
-.side4one > a > img {
+.side4one  a  img {
     width: 145px;
     height: 145px;
 }
@@ -663,7 +685,6 @@ main {
     color: #a7a7a7;
     border: 1px solid #ececec;
     border-radius: 100%;
-    
     
 }
 /* SIDE BLOCKS IMAGES */
@@ -854,7 +875,7 @@ footer {
 }
 .footer-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     height: 100%;
     width: 100%;
     flex-basis: content;
@@ -865,9 +886,10 @@ footer {
 }
 .image-wrapper > img {
     display: block;
+    min-height: 182px;
     width: 100%;
     aspect-ratio: 1/1;
-    object-fit: cover;
+    /* object-fit: cover; */
     object-position: center;
 }
 .image-wrapper > .fade-content {
@@ -879,6 +901,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: auto;
 }
 .image-wrapper:hover > .blurpic {
     filter: blur(1px);
@@ -913,7 +937,7 @@ footer {
 
 @media (max-width: 1044px) {
 
-.main {
+main {
             display: flex;
             flex-direction: column;
         } 
@@ -959,7 +983,21 @@ header > .social-icons {
             margin-bottom: 0px;
             border-radius: 1px;
             }
+.side4oneRow {
+    flex-direction: row;
+    justify-content: center;
+}
+.side4oneRow > a > img {
+    margin: 0 5px 5px 5px;
+}
 
+.hide-on-mobile {
+    display: none !important;
+}
+.show-on-mobile {
+    display: flex;
+    align-items: end;
+}
 
  }    
 
