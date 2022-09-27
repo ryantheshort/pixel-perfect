@@ -264,8 +264,7 @@ main {
     margin-left: 39px;
     margin-right: 39px;
     list-style-type: none;
-    padding-left: 0;
-    
+    padding-left: 0;  
 }
 
 .name-date {
@@ -293,6 +292,21 @@ main {
 }
 .social-icons-article > .fa-brands.fa-google-plus-g {
     margin-left: 15px;
+}
+.social-icons-article > .fa-brands.fa-twitter:hover {
+    color: #be6748;
+}
+.social-icons-article > .fa.fa-facebook:hover {
+    color: #be6748;
+}
+.social-icons-article > .fa-brands.fa-instagram:hover {
+    color: #be6748;
+}
+.social-icons-article > .fa-brands.fa-pinterest:hover {
+    color: #be6748;
+}
+.social-icons-article > .fa-brands.fa-google-plus-g:hover {
+    color: #be6748;
 }
 
 /* SIDE BLOCKS */
@@ -342,6 +356,7 @@ main {
     text-align: center;
     width: 100%;
 }
+
 .side2 {
     height: 987px;
     margin-bottom: 38px;
@@ -670,7 +685,6 @@ main {
     list-style-type: none;
     padding: 0;
     margin-top: 4px;
-    margin-top: 0px;
     width: 98%;
 }
 .social-icons-side > a {
@@ -680,13 +694,29 @@ main {
     height: 30px;
     font-size: 14px;
     margin: 0 5px 0 4px;
-    padding: 6;
     text-decoration: none;
     color: #a7a7a7;
     border: 1px solid #ececec;
-    border-radius: 100%;
-    
+    border-radius: 50%;
+    align-items: center;
 }
+
+.social-icons-side > .fa-brands.fa-twitter:hover {
+    color: #be6748;
+}
+.social-icons-side > .fa.fa-facebook:hover {
+    color: #be6748;
+}
+.social-icons-side > .fa-brands.fa-instagram:hover {
+    color: #be6748;
+}
+.social-icons-side > .fa-brands.fa-linkedin-in:hover {
+    color: #be6748;
+}
+.social-icons-side > .fa-brands.fa-google-plus-g:hover {
+    color: #be6748;
+}
+
 /* SIDE BLOCKS IMAGES */
 .coverpic {
     max-height: 182px;
